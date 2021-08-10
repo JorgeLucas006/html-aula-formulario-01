@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+  <style>
+    form {
+      width: 50%;
+    }
+    input,
+    select {
+      margin: 1rem 0.5rem;
+    }
+    article {
+      display: flex;
+      justify-content: space-between;
+    }
+    .genre input{
+      margin: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Formulário</h1>
+  <form action="">
+    <label for="nome">Nome completo: </label>
+    <input type="text" id="nome"> <br>
+  
+    <label for="data">Data de nascimento: </label>
+    <input type="date" id="data"> <br><br>
+  
+    <article>
+      <div>
+        <label for="estado">Selecione o estado em que mora: </label><br>
+        <select name="sestado" id="estado">
+          <option value="pe">Pernambuco</option>
+          <option value="ba">Bahia</option>
+          <option value="rj">Rio de Janeiro</option>
+          <option value="sp">São Paulo</option>
+          <option value="sc">Santa Catarina</option>
+          <option value="mg">Minas Gerais</option>
+        </select> <br>
+      </div>
+      <div class="genre">
+        <label>Gênero: </label> <br><br>
+    
+        <input type="radio" id="masculino" name="genero" value="masculino"> 
+        <label for="masculino">Maculino</label> <br>
+      
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label> <br>
+      
+        <input type="radio" id="outro" name="genero" value="outro">
+        <label for="outro">Outro</label>
+      </div>
+    </article>
+  
+    <article>
+      <div>
+        <label for="num">5 + 4 é? </label>
+        <input type="number" id="num"> <br>
+      </div>
+      <input type="submit" value="Salvar">
+    </article>
+  </form>
+</body>
+</html>
